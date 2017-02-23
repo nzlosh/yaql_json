@@ -9,8 +9,9 @@ OpenStack's mistral implementation, but there's no guarantee.
 ## Installation - Stackstorm
 
  1. Checkout package from github.
- 2. Enable the virtual environment.
+ 2. Enable the mistral virtual environment.
  3. Install the module with pip.
+ 4. Disable the mistral virtual envrionment.
  4. Restart the mistral daemon.
  
 ```
@@ -19,6 +20,7 @@ $ git clone git@github.com:nzlosh/yaql_json.git
 $ cd yaql_json
 $ source $ST2_INSTALLATION_PATH/mistral/bin/activate
 $ pip install .
+$ deactivate
 # SysV
 $ sudo service mistral-server restart
 # systemd
